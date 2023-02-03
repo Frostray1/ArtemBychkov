@@ -10841,6 +10841,11 @@ body {
   animation: text 3s 1;
 }
 
+@media (max-width: 600px) {
+  .welcomeText_1 {
+    font-size: 40px;
+  }
+}
 .welcomeText_2 {
   color: white;
   background: #000;
