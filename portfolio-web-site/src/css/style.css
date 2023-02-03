@@ -10776,11 +10776,14 @@ textarea.form-control-lg {
 
 body {
   background: black;
+  font-family: "Roboto", sans-serif;
   color: white;
 }
 
 .links {
   font-size: 2em;
+  opacity: 0;
+  animation: ani 2s forwards;
 }
 .links a {
   text-decoration: none;
@@ -10788,12 +10791,31 @@ body {
   margin-right: 1rem;
 }
 
+@keyframes ani {
+  0% {
+    opacity: 0;
+  }
+  30% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  70% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 1;
+  }
+}
 .langAndThemes {
   height: 100%;
   color: white;
   float: right;
   display: flex;
   align-items: center;
+  opacity: 0;
+  animation: ani 2s forwards;
 }
 .langAndThemes h5, .langAndThemes .h5 {
   margin-right: 1em;
@@ -10808,16 +10830,51 @@ body {
   margin-top: 10em;
 }
 
-.textContainer h1, .textContainer .h1 {
-  width: 16ch;
-  overflow: hidden;
-  font-family: monospace;
-  white-space: nowrap;
-  animation: printed-text 5s steps(16);
+.welcomeText_1 {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+  background: #000;
+  position: relative;
+  animation: text 3s 1;
 }
 
-@keyframes printed-text {
-  from {
-    width: 0%;
+.welcomeText_2 {
+  color: white;
+  background: #000;
+  font-size: 30px;
+  margin-top: 1em;
+}
+
+.welcomeText_3 {
+  background: #000;
+  margin-top: 0.5em;
+  animation: testq 3s 1;
+}
+
+@keyframes text {
+  0% {
+    color: #000;
+    margin-bottom: -65px;
+  }
+  30% {
+    margin-bottom: -65px;
+  }
+  85% {
+    margin-bottom: -65px;
+  }
+}
+@keyframes testq {
+  0% {
+    color: #000;
+    margin-top: -80px;
+  }
+  30% {
+    margin-top: -80px;
+  }
+  85% {
+    margin-top: -80px;
   }
 }

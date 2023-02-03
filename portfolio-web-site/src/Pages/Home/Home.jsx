@@ -28,10 +28,12 @@ const Home = () => {
       </Row>
       <Row className='welcomeContent'>
         <Col className='textContainer'>
-        <h1>Добро пожаловать</h1>
-        <h2>Меня зовут Артем</h2>
-        <h3>Здесь собрана коллекция работ и немного о себе</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore itaque assumenda delectus quam voluptatum unde nemo quasi vel illum.</p>
+        <div className="container">
+          <h1 className="welcomeText_1" >Добро пожаловать</h1>
+          <h2 className="welcomeText_2" >Меня зовут Артем</h2>
+          
+          <h3 className="welcomeText_3"  > Здесь представлены мои работы</h3>
+        </div>
         </Col>
       </Row>
     </Container>
