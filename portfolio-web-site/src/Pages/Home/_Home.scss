@@ -1,22 +1,61 @@
 
 body{
     background:black;
+
     color: white;
 }
 
 .links{
-    background:rgb(255, 0, 0);
-    
+    font-size:2em;
+    a{
+    text-decoration:none;
+    color:white;
+    margin-right: 1rem;
+    }
 }
 
-.bi-github{
-    color:green;
-    font-size:2em;
-}
+
 
 
 .langAndThemes{
-    background:white;
-    color:black
+    height: 100%;
+    // background:blue;
+    color:white;
+    float: right;
+    display: flex;
+    align-items: center;
+    h5{
+
+        // font-size: 1rem;
+        margin-right: 1em;
+        margin-top: 0.15em;
+    }
 }
 
+.ant-switch-inner{
+    border:1px solid white;
+}
+
+
+
+
+.welcomeContent{
+    margin-top: 10em;
+}
+
+.textContainer{
+    
+    h1{
+        width: 16ch;
+        overflow: hidden;
+        font-family: monospace;
+        white-space: nowrap;
+        animation: printed-text 5s steps(16)
+    }
+}
+
+@keyframes printed-text {
+    from {
+        width: 0%;
+    }
+}

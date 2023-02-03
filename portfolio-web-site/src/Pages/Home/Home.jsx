@@ -1,27 +1,39 @@
 import React from 'react'
+import { Switch } from 'antd'
+
 import { Col, Container, Row } from 'react-bootstrap'
 
+
+const onChange = (checked) => {
+  console.log(`switch to ${checked}`);
+};
 
 const Home = () => {
   return (
     <Container >
-      <Row >
-        <Col>
+      <Row className='mt-3' >
+        <Col >
         <div className="links">
-        <i class="bi bi-github"></i>
+        <a href="#"><i className="bi bi-github"></i></a>
+        <a href="#"><i className="bi bi-telegram"></i></a>
+        <a href="#"><i className="bi bi-linkedin"></i></a>
         </div>
           </Col>
         <Col>
         <div className="langAndThemes">
-          qwe
+          <h5>Eng</h5>
+        <Switch className='switch' onChange={onChange} />
         </div>
         </Col>
       </Row>
-      {/* <Row>
-        <Col>1 of 3</Col>
-        <Col>2 of 3</Col>
-        <Col>3 of 3</Col>
-      </Row> */}
+      <Row className='welcomeContent'>
+        <Col className='textContainer'>
+        <h1>Добро пожаловать</h1>
+        <h2>Меня зовут Артем</h2>
+        <h3>Здесь собрана коллекция работ и немного о себе</h3>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, tempore itaque assumenda delectus quam voluptatum unde nemo quasi vel illum.</p>
+        </Col>
+      </Row>
     </Container>
   )
 }
