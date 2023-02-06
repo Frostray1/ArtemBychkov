@@ -3,6 +3,7 @@ import './css/style.css'
 // import './style.scss';
 import {Routes, Route} from 'react-router-dom'
 import 'animate.css';
+import WOW from 'wow.js'
 function App() {
   return (
     <Routes>

@@ -28,14 +28,11 @@ body{
 
 .langAndThemes{
     height: 100%;
-    // background:blue;
     color:white;
     float: right;
     display: flex;
     align-items: center;
     h5{
-
-        // font-size: 1rem;
         margin-right: 1em;
         margin-top: 0.15em;
     }
@@ -51,7 +48,8 @@ body{
 
 
 .welcomeContent{
-    margin-top: 10em;
+    margin-top: 15em;
+    height: 75vh;
 }
 
 
@@ -59,6 +57,7 @@ body{
 
  
 }
+
 .welcomeText_1{
 	color: #fff;
 	font-size: 60px;
@@ -119,4 +118,24 @@ body{
 		margin-top: -80px;
 	
 	}
+}
+
+
+
+
+
+
+
+.myLibrary{
+ text-align: center;
+}
+
+
+.libraryCard{
+    text-align: center;
+    margin-top: 2em;
+    img{
+        // width: 30em;
+        // height: 30em;
+    }
 }

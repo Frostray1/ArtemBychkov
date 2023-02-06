@@ -10827,7 +10827,8 @@ body {
 }
 
 .welcomeContent {
-  margin-top: 10em;
+  margin-top: 15em;
+  height: 75vh;
 }
 
 .welcomeText_1 {
@@ -10882,4 +10883,12 @@ body {
   85% {
     margin-top: -80px;
   }
+}
+.myLibrary {
+  text-align: center;
+}
+
+.libraryCard {
+  text-align: center;
+  margin-top: 2em;
 }
