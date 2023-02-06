@@ -15,8 +15,6 @@ const Home = () => {
     new WOW().init();
   }, []);
 
-  
-
   return (
     <Container>
       <Row className="mt-3">
@@ -51,31 +49,27 @@ const Home = () => {
       </Row>
       <Row>
         <Col>
-          <h1 className="wow animate__fadeInLeft myLibrary">Мои Работы</h1>
+          <h1 className="wow animate__fadeInUp myLibrary">Библиотека</h1>
         </Col>
       </Row>
       <Row>
         <Col className="wow animate__backInLeft libraryCard">
-          <LybraryCard
-            item={card[0]}
-          />
+          <LybraryCard item={card[0]} />
         </Col>
+      </Row>
+      <Row>
         <Col className="wow animate__backInRight libraryCard">
-        <LybraryCard
-            item={card[1]}
-          />
+          <LybraryCard item={card[1]} />
         </Col>
       </Row>
       <Row>
         <Col className="wow animate__backInLeft libraryCard">
-        <LybraryCard
-            item={card[2]}
-          />
+          <LybraryCard item={card[2]} />
         </Col>
+      </Row>
+      <Row>
         <Col className="wow animate__backInRight libraryCard">
-        <LybraryCard
-            item={card[3]}
-          />
+          <LybraryCard item={card[3]} />
         </Col>
       </Row>
     </Container>
