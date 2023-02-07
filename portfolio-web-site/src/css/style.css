@@ -10956,16 +10956,35 @@ body {
     margin-top: 5%;
   }
 }
-@media (max-width: 770px) {
+@media (max-width: 767px) {
   .blockCard {
     margin-top: 20%;
   }
   .blockCard img {
     padding-bottom: 0;
-    width: 90vw;
+    width: 70vw;
     height: 40vh;
   }
   .linkSite {
     margin-left: 20%;
+  }
+  .blockCard__info {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 574px) {
+  .blockCard {
+    margin-top: 10%;
+  }
+  .blockCard img {
+    padding-bottom: 0;
+    width: 90vw;
+    height: 30vh;
+  }
+  .linkSite {
+    margin-left: 20%;
+  }
+  .blockCard__info {
+    margin-top: 5%;
   }
 }
