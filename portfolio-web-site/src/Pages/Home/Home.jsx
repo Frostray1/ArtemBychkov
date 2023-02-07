@@ -20,13 +20,13 @@ const Home = () => {
       <Row className="mt-3">
         <Col>
           <div className="links">
-            <a href="#">
+            <a target="_blank" rel="noreferrer" href="https://github.com/Frostray1">
               <i className="bi bi-github"></i>
             </a>
-            <a href="#">
+            <a target="_blank" rel="noreferrer" href="https://t.me/frostray1">
               <i className="bi bi-telegram"></i>
             </a>
-            <a href="#">
+            <a target="_blank" rel="noreferrer" href="https://linkedin.com/in/artem-bychkov-24b111252">
               <i className="bi bi-linkedin"></i>
             </a>
           </div>
