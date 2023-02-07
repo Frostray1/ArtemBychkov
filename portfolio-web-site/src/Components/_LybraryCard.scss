@@ -1,40 +1,81 @@
-.blockCard{
-    // border:1px solid white;
-    border-radius: 25px;
-    width: 100%;
-    height: 90vh;
-    margin-top: 10em;
-    img{
-        border-radius: 25px 0px 0px 25px;
+.blockCard {
+  // border:1px solid white;
+  border-radius: 25px;
+  width: 100%;
+  height: 90vh;
+  margin-top: 10em;
+  img {
+    // border-radius: 25px 0px 0px 25px;
+    object-fit: scale-down;
+    // width: 40vw;
+    padding-bottom: 7em;
+  }
+  p {
+    margin-top: 15%;
+    text-align: justify;
+    height: 50%;
+    white-space: pre-line;
+  }
+  a {
+    text-decoration: none;
+    color: white;
+  }
+}
+.blockCard__links {
+  margin-top: 10%;
+}
+
+.blockCard__info {
+}
+
+.linkSite {
+  border: 1px solid white;
+  padding: 10px;
+  line-height: 50px;
+  white-space: nowrap;
+}
+.linkGithub {
+  font-size: 35px;
+  // float: right;
+}
+
+@media (max-width: 1200px) {
+  .blockCard__links {
+    margin-top: 30%;
+  }
+}
+
+@media (max-width: 991px) {
+  .blockCard__links {
+    margin-top: 15%;
+  }
+  .blockCard {
+    margin-bottom: 70%;
+
+    img {
+      padding-bottom: 0;
+      // width: 100%;
     }
-    p{
-        margin-top: 15%;
-        text-align: left;
+    p {
+      text-align: center;
+      margin-top: 0;
     }
-    a{
-        text-decoration: none;
-        color:white;
-        
+  }
+  .blockCard__info {
+    margin-top: 5%;
+  }
+}
+
+@media (max-width: 770px) {
+  .blockCard {
+    margin-top: 20%;
+    img {
+        padding-bottom: 0;
+      width: 90vw;
+      height: 40vh;
     }
-
-}
-.blockCard__links{
-margin-top: 10%;
-}
-
-.blockCard__links{
-
-
-}
-.linkSite{
-
-   
-    border:1px solid white;
-    padding: 10px;
-    line-height: 50px;
-
-}
-.linkGithub{
-    font-size: 35px;
-    // float: right;
+  }
+  .linkSite{
+    margin-left: 20%;
+  }
 }

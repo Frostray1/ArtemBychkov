@@ -10904,11 +10904,14 @@ body {
   margin-top: 10em;
 }
 .blockCard img {
-  border-radius: 25px 0px 0px 25px;
+  object-fit: scale-down;
+  padding-bottom: 7em;
 }
 .blockCard p {
   margin-top: 15%;
-  text-align: left;
+  text-align: justify;
+  height: 50%;
+  white-space: pre-line;
 }
 .blockCard a {
   text-decoration: none;
@@ -10923,8 +10926,46 @@ body {
   border: 1px solid white;
   padding: 10px;
   line-height: 50px;
+  white-space: nowrap;
 }
 
 .linkGithub {
   font-size: 35px;
+}
+
+@media (max-width: 1200px) {
+  .blockCard__links {
+    margin-top: 30%;
+  }
+}
+@media (max-width: 991px) {
+  .blockCard__links {
+    margin-top: 15%;
+  }
+  .blockCard {
+    margin-bottom: 70%;
+  }
+  .blockCard img {
+    padding-bottom: 0;
+  }
+  .blockCard p {
+    text-align: center;
+    margin-top: 0;
+  }
+  .blockCard__info {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 770px) {
+  .blockCard {
+    margin-top: 20%;
+  }
+  .blockCard img {
+    padding-bottom: 0;
+    width: 90vw;
+    height: 40vh;
+  }
+  .linkSite {
+    margin-left: 20%;
+  }
 }
