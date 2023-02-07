@@ -22,7 +22,7 @@ const LybraryCard = (props) => {
             <a className="linkSite" href={props.item.siteLink} target="_blank" rel="noreferrer">Потыкать проект</a>
             </Col> 
             <Col >
-            <a className="linkGithub" href="">
+            <a className="linkGithub" target="_blank" rel="noreferrer" href={props.item.githubLink}>
               <i className="bi bi-github"></i>
             </a>
             </Col> 
