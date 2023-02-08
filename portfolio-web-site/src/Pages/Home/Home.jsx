@@ -5,6 +5,8 @@ import { Col, Container, Row } from "react-bootstrap";
 import WOW from "wow.js";
 import LybraryCard from "../../Components/LybraryCard";
 import { card } from "../../listLibrary";
+import { useTranslation } from "react-i18next";
+import LandingCard from "../../Components/LandingCard";
 
 const onChange = (checked) => {
   console.log(`switch to ${checked}`);
@@ -14,6 +16,14 @@ const Home = () => {
   useEffect(() => {
     new WOW().init();
   }, []);
+
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (language) => {
+    language ? i18n.changeLanguage("en"): i18n.changeLanguage("ru")
+    
+    // i18n.changeLanguage(language);
+  };
 
   return (
     <Container>
@@ -34,7 +44,7 @@ const Home = () => {
         <Col>
           <div className="langAndThemes">
             <h5>Eng</h5>
-            <Switch className="switch" onChange={onChange} />
+            <Switch className="switch" onChange={changeLanguage} />
           </div>
         </Col>
       </Row>
@@ -72,6 +82,17 @@ const Home = () => {
           <LybraryCard item={card[3]} />
         </Col>
       </Row>
+
+      <Row>
+      <h1 className="wow animate__fadeInUp myLibrary">Верстка</h1>
+      </Row>
+      <Row>
+        <Col className="wow animate__fadeInUp ">
+        <LandingCard/>
+        </Col>
+      </Row>
+
+
     </Container>
   );
 };
