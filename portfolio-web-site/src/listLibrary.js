@@ -14,7 +14,7 @@ export const card = [
     imgLink: require("./img/todo_List.png"),
     siteLink: "https://todo-list-react-dun.vercel.app/",
     githubLink: "https://github.com/Frostray1/todoListReact",
-    info: "Обычный to-do list \n Js, React, Tailwind CSS",
+    info: translationKeys.SECOND_CARD_INFO,
   },
 
   {
@@ -22,7 +22,7 @@ export const card = [
     imgLink: require("./img/weatherApp.png"),
     siteLink: "https://weather-yandex-api.vercel.app/",
     githubLink: "https://github.com/Frostray1/weatherYandexAPI",
-    info: "Погодный информер \n API: Open-meteo, Nominatim \n HTML, CSS(Scss), JS",
+    info: translationKeys.THRID_CARD_INFO,
   },
 
   {
@@ -30,6 +30,6 @@ export const card = [
     imgLink: require("./img/reactPizza.png"),
     siteLink: "https://react-pizza-phi-teal.vercel.app/",
     githubLink: "https://github.com/Frostray1/reactPizza",
-    info: "Онлайн магазин по продаже пиццы \n HTML, CSS, React, MockAPI",
+    info: translationKeys.FOURTH_CARD_INFO,
   },
 ];

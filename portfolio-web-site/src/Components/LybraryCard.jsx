@@ -1,6 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import React from "react";
 import { useTranslation } from "react-i18next";
+import translationKeys from "../translations";
 
 const LybraryCard = (props) => {
   const { t } = useTranslation();
@@ -24,7 +25,7 @@ const LybraryCard = (props) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  Потыкать проект
+                  {t(translationKeys.BUTTON)}
                 </a>
               </Col>
               <Col>

@@ -61,14 +61,14 @@ const Home = () => {
         <Col className="textContainer">
           <div className="container">
             <h1 className="welcomeText_1">{t(translationKeys.WELCOME)}</h1>
-            <h2 className="welcomeText_2">Меня зовут Артем</h2>
-            <h3 className="welcomeText_3"> Здесь представлены мои работы</h3>
+            <h2 className="welcomeText_2">{t(translationKeys.MYNAME)}</h2>
+            <h3 className="welcomeText_3"> {t(translationKeys.TEXTWORK)}</h3>
           </div>
         </Col>
       </Row>
       <Row>
         <Col>
-          <h1 className="wow animate__fadeInUp myLibrary">Библиотека</h1>
+          <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LIBRARY)}</h1>
         </Col>
       </Row>
       <Row>
@@ -93,7 +93,7 @@ const Home = () => {
       </Row>
 
       <Row>
-        <h1 className="wow animate__fadeInUp myLibrary">Верстка</h1>
+        <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LAYOUT)}</h1>
       </Row>
       <Row>
         <Col className="wow animate__fadeInUp ">
