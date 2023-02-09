@@ -11009,3 +11009,36 @@ body {
 .blockCardLanding__Links {
   margin-top: 2rem;
 }
+
+@media (max-width: 767px) {
+  .blockCardLanding {
+    margin-top: 20%;
+  }
+  .blockCardLanding img {
+    padding-bottom: 0;
+    width: 70vw;
+    height: 40vh;
+  }
+  .linkSite {
+    margin-left: 20%;
+  }
+  .blockCard__info {
+    margin-top: 5%;
+  }
+}
+@media (max-width: 574px) {
+  .blockCardLanding {
+    margin-top: 10%;
+  }
+  .blockCardLanding img {
+    padding-bottom: 0;
+    width: 90vw;
+    height: 30vh;
+  }
+  .linkSite {
+    margin-left: 20%;
+  }
+  .blockCard__info {
+    margin-top: 5%;
+  }
+}

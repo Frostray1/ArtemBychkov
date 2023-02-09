@@ -9,9 +9,7 @@ import { useTranslation } from "react-i18next";
 import LandingCard from "../../Components/LandingCard";
 import translationKeys from "../../translations";
 
-const onChange = (checked) => {
-  console.log(`switch to ${checked}`);
-};
+
 
 const Home = () => {
   useEffect(() => {
