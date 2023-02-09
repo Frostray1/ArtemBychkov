@@ -10897,15 +10897,20 @@ body {
   height: 30em;
 }
 
+.carousel-item img {
+  width: 300px;
+  height: 300px;
+}
+
 .blockCard {
   border-radius: 25px;
-  width: 100%;
-  height: 90vh;
-  margin-top: 10em;
+  width: 90%;
+  background: red;
+  margin: 0 auto;
+  height: 700px;
 }
 .blockCard img {
   object-fit: scale-down;
-  padding-bottom: 7em;
 }
 .blockCard p {
   margin-top: 15%;
@@ -10916,6 +10921,10 @@ body {
 .blockCard a {
   text-decoration: none;
   color: white;
+}
+
+.carouselItem {
+  width: 100vw;
 }
 
 .blockCard__links {
@@ -11041,4 +11050,45 @@ body {
   .blockCard__info {
     margin-top: 5%;
   }
+}
+.carousel {
+  margin-bottom: 100vh;
+}
+
+.CarouselBlockCard {
+  width: 100%;
+  height: 70%;
+}
+.CarouselBlockCard img {
+  width: 60%;
+  height: 60%;
+  margin: 0 auto;
+}
+
+.CarouselBlock__info {
+  text-align: center;
+  margin: 2em auto;
+  width: 70%;
+}
+.CarouselBlock__info p {
+  font-size: 18px;
+  text-align: center;
+  height: 50%;
+  white-space: pre-line;
+  overflow: scroll;
+}
+.CarouselBlock__info a {
+  text-decoration: none;
+  color: white;
+}
+
+.CarouselBlock__linkSite {
+  border: 1px solid white;
+  padding: 10px;
+  line-height: 50px;
+  white-space: nowrap;
+}
+
+.CarouselBlock__linkGithub {
+  font-size: 35px;
 }

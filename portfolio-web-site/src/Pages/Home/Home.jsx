@@ -8,6 +8,7 @@ import { card } from "../../listProjects";
 import { useTranslation } from "react-i18next";
 import LandingCard from "../../Components/LandingCard";
 import translationKeys from "../../translations";
+import UncontrolledExample from "../../Components/Carousel";
 
 
 
@@ -65,7 +66,8 @@ const Home = () => {
         </Col>
       </Row>
       <Row>
-        <Col>
+        <UncontrolledExample/>
+        {/* <Col>
           <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LIBRARY)}</h1>
         </Col>
       </Row>
@@ -87,10 +89,10 @@ const Home = () => {
       <Row>
         <Col className="wow animate__backInRight libraryCard">
           <LybraryCard item={card[3]} />
-        </Col>
+        </Col> */}
       </Row>
 
-      <Row>
+      {/* <Row>
         <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LAYOUT)}</h1>
       </Row>
       <Row>
@@ -100,7 +102,7 @@ const Home = () => {
         <Col className="wow animate__fadeInUp libraryCard">
           <LandingCard item={card[5]} />
         </Col>
-      </Row>
+      </Row> */}
     </Container>
   );
 };
