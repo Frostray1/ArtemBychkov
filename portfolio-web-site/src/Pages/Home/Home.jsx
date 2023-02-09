@@ -4,7 +4,7 @@ import { Switch } from "antd";
 import { Col, Container, Row } from "react-bootstrap";
 import WOW from "wow.js";
 import LybraryCard from "../../Components/LybraryCard";
-import { card } from "../../listLibrary";
+import { card } from "../../listProjects";
 import { useTranslation } from "react-i18next";
 import LandingCard from "../../Components/LandingCard";
 import translationKeys from "../../translations";
@@ -96,8 +96,11 @@ const Home = () => {
         <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LAYOUT)}</h1>
       </Row>
       <Row>
-        <Col className="wow animate__fadeInUp ">
-          <LandingCard />
+      <Col className="wow animate__fadeInUp libraryCard">
+          <LandingCard item={card[4]} />
+        </Col>
+        <Col className="wow animate__fadeInUp libraryCard">
+          <LandingCard item={card[5]} />
         </Col>
       </Row>
     </Container>

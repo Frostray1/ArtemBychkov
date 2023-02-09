@@ -32,4 +32,23 @@ export const card = [
     githubLink: "https://github.com/Frostray1/reactPizza",
     info: translationKeys.FOURTH_CARD_INFO,
   },
+  {
+    title: "React Pizza",
+    imgLink: require("./img/landingalldevices.png"),
+    siteLink: "https://free-landing-page.vercel.app",
+    githubLink: "https://github.com/Frostray1/Free_Landing_Page",
+    info: translationKeys.FOURTH_CARD_INFO,
+  },
+  {
+    title: "React Pizza",
+    imgLink: require("./img/whiteSite.png"),
+    siteLink: "https://clean-and-simple-website.vercel.app",
+    githubLink: "https://github.com/Frostray1/clean_and_simple_website",
+    info: translationKeys.FOURTH_CARD_INFO,
+
+  },
+
+
+
+
 ];
