@@ -11090,7 +11090,7 @@ body {
 }
 
 .CarouselBlockCard .hoverText {
-  opacity: 1;
+  opacity: 0;
   position: absolute;
   border-radius: 25px;
   bottom: 10%;
@@ -11157,7 +11157,7 @@ body {
     display: none;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 420px) {
   .CarouselBlock__IconLinkSite {
     font-size: 30px;
   }
