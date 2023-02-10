@@ -9,24 +9,17 @@ function UncontrolledExample() {
     <Carousel indicators = {false} className="carousel">
       <Carousel.Item>
         <CarouselBlockItem item={card[0]} />
-        <Carousel.Caption>
-
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
-      <CarouselBlockItem item={card[1]} />
-
-        <Carousel.Caption>
-         
-        </Carousel.Caption>
+        <CarouselBlockItem item={card[1]} />
       </Carousel.Item>
       <Carousel.Item>
-      <CarouselBlockItem item={card[2]} />
-
-        <Carousel.Caption>
-          
-        </Carousel.Caption>
+        <CarouselBlockItem item={card[2]} />
       </Carousel.Item>
+      <Carousel.Item>
+        <CarouselBlockItem item={card[3]} />
+      </Carousel.Item>
+    
     </Carousel>
   );
 }

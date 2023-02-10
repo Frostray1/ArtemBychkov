@@ -10,14 +10,10 @@ const CarouselBlockItem = (props) => {
     <div className="CarouselBlockCard">
       <Row>
         <img src={props.item.imgLink} alt="logo" />
-      </Row>
-      <Row>
-      <div className="CarouselBlock__info">
-            <h3>{props.item.title}</h3>
-
-            <p>{t(props.item.info)}</p>
-            <Row className="CarouselBlock__links">
-              <Col>
+        <div className="hoverText">
+          <Row className="CarouselBlock__Links">
+            <Col>
+              <button className="button__LinkSite">
                 <a
                   className="CarouselBlock__linkSite"
                   href={props.item.siteLink}
@@ -26,27 +22,29 @@ const CarouselBlockItem = (props) => {
                 >
                   {t(translationKeys.BUTTON)}
                 </a>
-              </Col>
-              <Col>
-                <a
-                  className="CarouselBlock__linkGithub"
-                  target="_blank"
-                  rel="noreferrer"
-                  href={props.item.githubLink}
-                >
-                  <i className="bi bi-github"></i>
-                </a>
-              </Col>
-            </Row>
-          </div>
+              </button>
+              <a
+                className="CarouselBlock__IconLinkSite"
+                target="_blank"
+                rel="noreferrer"
+                href={props.item.siteLink}
+              >
+                <i className="bi bi-globe2"></i>
+              </a>
+            </Col>
+            <Col>
+              <a
+                className="CarouselBlock__linkGithub"
+                target="_blank"
+                rel="noreferrer"
+                href={props.item.githubLink}
+              >
+                <i className="bi bi-github"></i>
+              </a>
+            </Col>
+          </Row>
+        </div>
       </Row>
-      
-      <Row>
-  
-      </Row>
-      {/* <Col>
-          
-        </Col> */}
     </div>
   );
 };

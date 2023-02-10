@@ -10,8 +10,6 @@ import LandingCard from "../../Components/LandingCard";
 import translationKeys from "../../translations";
 import UncontrolledExample from "../../Components/Carousel";
 
-
-
 const Home = () => {
   useEffect(() => {
     new WOW().init();
@@ -66,9 +64,13 @@ const Home = () => {
         </Col>
       </Row>
       <Row>
-        <UncontrolledExample/>
-        {/* <Col>
-          <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LIBRARY)}</h1>
+        <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LIBRARY)}</h1>
+      </Row>
+      <Row>
+        <UncontrolledExample className="wow animate__fadeInUp "/>
+      </Row>
+      {/* <Col>
+          
         </Col>
       </Row>
       <Row>
@@ -90,7 +92,6 @@ const Home = () => {
         <Col className="wow animate__backInRight libraryCard">
           <LybraryCard item={card[3]} />
         </Col> */}
-      </Row>
 
       {/* <Row>
         <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LAYOUT)}</h1>

@@ -1,45 +1,121 @@
-
-.carousel{
-margin-bottom: 100vh;
+.carousel {
+  margin-top: 5em;
+  margin-bottom: 100vh;
 }
 
 .CarouselBlockCard {
   // background:red;
   width: 100%;
   height: 70%;
-  
+  position: relative;
   img {
     width: 60%;
     height: 60%;
     margin: 0 auto;
-  }
-}
-
-.CarouselBlock__info {
-  text-align: center;
-  margin: 2em auto;
-  width: 70%;
-  // background:red;
-  h3 {
-  }
-  p {
-    font-size: 18px;
-    text-align: center;
-    height: 50%;
-    white-space: pre-line;
-    overflow: scroll;
   }
   a {
     text-decoration: none;
     color: white;
   }
 }
-.CarouselBlock__linkSite{
-    border: 1px solid white;
-    padding: 10px;
-    line-height: 50px;
-    white-space: nowrap;
+
+.CarouselBlock__Links {
+  text-align: center;
+  margin-top: 28%;
 }
-.CarouselBlock__linkGithub{
-    font-size: 35px;
+
+.CarouselBlock__linkSite {
+  white-space: nowrap;
+}
+
+.CarouselBlock__IconLinkSite {
+  display: none;
+  font-size: 40px;
+}
+
+.CarouselBlock__linkGithub {
+  font-size: 40px;
+}
+
+.CarouselBlockCard .hoverText {
+  opacity: 0;
+  position: absolute;
+  border-radius: 25px;
+  bottom: 10%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  transition: 1s;
+  width: 48%;
+  height: 89%;
+  font-size: 22px;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  // padding-top:100vh ;
+}
+.CarouselBlockCard:hover .hoverText {
+  opacity: 1;
+}
+
+.button__LinkSite {
+  width: 200px;
+  height: 60px;
+  background: none;
+  border: 4px solid;
+  color: white;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+  font-size: 16px;
+  position: relative;
+}
+
+.button__LinkSite::before,
+.button__LinkSite::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 4px;
+  background: rgba(0, 0, 0, 0.7);
+  transform: skewX(50deg);
+  transition: 0.4s linear;
+}
+
+.button__LinkSite::before {
+  top: -4px;
+  left: 10%;
+}
+
+.button__LinkSite::after {
+  bottom: -4px;
+  right: 10%;
+}
+
+.button__LinkSite:hover::before {
+  left: 80%;
+}
+
+.button__LinkSite:hover::after {
+  right: 80%;
+}
+
+@media (max-width: 767px) {
+  .CarouselBlock__IconLinkSite {
+    display: block;
+  }
+  .button__LinkSite{
+    display:none;
+  }
+}
+
+@media (max-width: 400px) {
+  .CarouselBlock__IconLinkSite {
+    // display: block;
+    font-size: 30px;
+  }
+  .CarouselBlock__linkGithub{
+    font-size: 30px;
+  }
+  // .button__LinkSite{
+  //   display:none;
+  // }
 }
