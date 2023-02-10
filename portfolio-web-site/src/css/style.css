@@ -11090,7 +11090,7 @@ body {
 }
 
 .CarouselBlockCard .hoverText {
-  opacity: 0;
+  opacity: 1;
   position: absolute;
   border-radius: 25px;
   bottom: 10%;
@@ -11163,5 +11163,14 @@ body {
   }
   .CarouselBlock__linkGithub {
     font-size: 30px;
+  }
+  .CarouselBlockCard img {
+    width: 90%;
+    height: 90%;
+    margin: 0 auto;
+  }
+  .CarouselBlockCard .hoverText {
+    width: 73%;
+    height: 90%;
   }
 }
