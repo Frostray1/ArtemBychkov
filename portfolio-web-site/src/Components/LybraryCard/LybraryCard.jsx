@@ -1,34 +1,23 @@
 import { Col, Row } from "react-bootstrap";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import translationKeys from "../translations";
+import translationKeys from "../../translations";
 
-const LandingCard = (props) => {
+const LybraryCard = (props) => {
   const { t } = useTranslation();
 
   return (
-    <Row>
-      <div className="blockCardLanding">
-        <img src={props.item.imgLink} alt="logo" />
-        <Row className="blockCardLanding__Links">
-          <Col>
-            <a target="_blank" rel="noreferrer" href={props.item.siteLink}>
-              <i className="bi bi-globe2"></i>
-            </a>
-          </Col>
-          <Col>
-            <a arget="_blank" rel="noreferrer" href={props.item.githubLink}>
-              <i className="bi bi-github"></i>
-            </a>
-          </Col>
-        </Row>
-
-        {/* <Col>
+    <div className="blockCard">
+      <Row>
+        <Col>
+          <img src={props.item.imgLink} alt="logo" />
+        </Col>
+        <Col>
           <div className="blockCard__info">
             <h3>{props.item.title}</h3>
 
             <p>{t(props.item.info)}</p>
-            <Row className="mt--0 blockCard__links">
+            <Row className="blockCard__links">
               <Col>
                 <a
                   className="linkSite"
@@ -51,10 +40,10 @@ const LandingCard = (props) => {
               </Col>
             </Row>
           </div>
-        </Col> */}
-      </div>
-    </Row>
+        </Col>
+      </Row>
+    </div>
   );
 };
 
-export default LandingCard;
+export default LybraryCard;

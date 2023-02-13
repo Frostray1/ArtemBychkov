@@ -1,14 +1,16 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Switch } from "antd";
 
 import { Col, Container, Row } from "react-bootstrap";
 import WOW from "wow.js";
-import LybraryCard from "../../Components/LybraryCard";
 import { card } from "../../listProjects";
 import { useTranslation } from "react-i18next";
-import LandingCard from "../../Components/LandingCard";
+import LandingCard from "../../Components/LandigCard/LandingCard";
 import translationKeys from "../../translations";
-import UncontrolledExample from "../../Components/Carousel";
+import UncontrolledExample from "../../Components/Carousel/Carousel";
+
+import ProgresBar from "../../Components/ProgresBar/ProgresBar";
+import MySkills from "../../Components/MySkills/MySkills";
 
 const Home = () => {
   useEffect(() => {
@@ -22,6 +24,7 @@ const Home = () => {
 
     // i18n.changeLanguage(language);
   };
+ 
 
   return (
     <Container>
@@ -64,46 +67,32 @@ const Home = () => {
         </Col>
       </Row>
       <Row>
-        <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LIBRARY)}</h1>
+        <h1 className="wow animate__fadeInUp myLibrary">
+          {t(translationKeys.LIBRARY)}
+        </h1>
+      </Row>
+      <Row className="wow animate__fadeInUp ">
+        <UncontrolledExample />
       </Row>
       <Row>
-        <UncontrolledExample className="wow animate__fadeInUp "/>
-      </Row>
-      {/* <Col>
-          
-        </Col>
+        <h1 className="wow animate__fadeInUp myLibrary">
+          {t(translationKeys.LAYOUT)}
+        </h1>
       </Row>
       <Row>
-        <Col className="wow animate__backInLeft libraryCard">
-          <LybraryCard item={card[0]} />
-        </Col>
-      </Row>
-      <Row>
-        <Col className="wow animate__backInRight libraryCard">
-          <LybraryCard item={card[1]} />
-        </Col>
-      </Row>
-      <Row>
-        <Col className="wow animate__backInLeft libraryCard">
-          <LybraryCard item={card[2]} />
-        </Col>
-      </Row>
-      <Row>
-        <Col className="wow animate__backInRight libraryCard">
-          <LybraryCard item={card[3]} />
-        </Col> */}
-
-      {/* <Row>
-        <h1 className="wow animate__fadeInUp myLibrary">{t(translationKeys.LAYOUT)}</h1>
-      </Row>
-      <Row>
-      <Col className="wow animate__fadeInUp libraryCard">
+        <Col className="wow animate__fadeInUp libraryCard">
           <LandingCard item={card[4]} />
         </Col>
         <Col className="wow animate__fadeInUp libraryCard">
           <LandingCard item={card[5]} />
         </Col>
-      </Row> */}
+      </Row>
+      <Row>
+      <h1 className="wow animate__fadeInUp myLibrary">
+          {t(translationKeys.MYSKILLS)}
+        </h1>
+      <MySkills className="wow animate__fadeInUp myLibrary"/>
+      </Row>
     </Container>
   );
 };

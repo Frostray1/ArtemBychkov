@@ -9,6 +9,7 @@ const translationKeys = {
   BUTTON:"BUTTON",
   LIBRARY:"LIBRARY",
   LAYOUT:"LAYOUT",
+  MYSKILLS:"MYSKILLS",
 };
 
 export default translationKeys;

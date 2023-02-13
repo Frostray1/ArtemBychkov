@@ -1,6 +1,6 @@
 
 import Carousel from 'react-bootstrap/Carousel';
-import { card } from '../listProjects';
+import { card } from '../../listProjects';
 import CarouselBlockItem from './CarouselBlockItem';
 
 

@@ -1,0 +1,28 @@
+.skillsInfo{
+    text-align: center;
+    margin:0;
+    margin-bottom: 70vh;
+    h5{
+        margin-top: 1em;
+    }
+}
+
+.skillsIcons{
+    margin-top: 3em;
+    vertical-align: middle;
+    width: 100px;
+    height: 100px;
+    
+       
+    
+}
+.skillsIcons:hover{
+    width: 120px;
+    height: 120px; 
+    transition: 0.2s
+}
+.skillsIcons:not(:hover) {
+    width: 100px;
+    height: 100px; 
+    transition: 0.2s
+}

@@ -9,6 +9,7 @@ const translations = {
   BUTTON:"View the project",
   LIBRARY:"My library",
   LAYOUT:"Layout",
+  MYSKILLS:"My skills",
 };
 
 export default translations;

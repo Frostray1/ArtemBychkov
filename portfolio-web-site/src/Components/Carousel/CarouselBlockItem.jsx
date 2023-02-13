@@ -1,7 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import React from "react";
 import { useTranslation } from "react-i18next";
-import translationKeys from "../translations";
+import translationKeys from "../../translations";
 
 const CarouselBlockItem = (props) => {
   const { t } = useTranslation();
