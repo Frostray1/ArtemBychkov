@@ -1,0 +1,131 @@
+.Contacts{
+    text-align: center;
+    margin:4em auto;
+    margin-bottom: 50vh;
+    width: 25vw;
+}
+.Contacts__Info{
+    margin:0 auto;
+    
+}
+.CarouselBlock__linkSiteIcon{
+    display: none;
+    font-size: 60px;
+    color:white;
+
+}
+.LinkIcon{
+    font-size: 60px;
+    margin-top: 0.3em;
+    a{
+        color:white;
+    }
+    
+}
+.contacts__Number{
+    margin:1em auto;
+    padding: 0;
+    font-size: 26px;
+    a{
+        margin:0;
+        padding: 0;
+        text-decoration: none;
+        color:white;
+    }
+    
+}
+
+
+
+.button__Email {
+    margin: 0 auto;
+    width: 240px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    a{
+        text-decoration: none;
+        color:white;
+    }
+  }
+  
+  .button__Email::before,
+  .button__Email::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 4px;
+    background: rgba(0, 0, 0, 1);
+    transform: skewX(50deg);
+    transition: 0.4s linear;
+  }
+  
+  .button__Email::before {
+    top: -4px;
+    left: 10%;
+  }
+  
+  .button__Email::after {
+    bottom: -4px;
+    right: 10%;
+  }
+  
+  .button__Email:hover::before {
+    left: 80%;
+  }
+  
+  .button__Email:hover::after {
+    right: 80%;
+  }
+
+
+
+  @media (max-width: 1450px) {
+    .Contacts{
+        width: 35vw;
+        
+    }
+  }
+  
+  @media (max-width: 1030px) {
+    .Contacts{
+        width: 45vw;
+      
+    }
+  }
+  @media (max-width: 800px) {
+    .Contacts{
+        width: 55vw;
+        
+    }
+  }
+  @media (max-width: 660px) {
+    .Contacts{
+        width: 65vw;
+        
+    }
+  }
+  @media (max-width: 430px) {
+    .Contacts{
+        width: 65vw;
+        
+    }
+    .button__Email{
+        display: none;
+    }
+    .CarouselBlock__linkSiteIcon{
+        display: block;
+    }
+  }
+  @media (max-width: 660px) {
+    .Contacts{
+        width: 65vw;
+        
+    }
+  }

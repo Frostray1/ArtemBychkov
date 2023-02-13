@@ -10,7 +10,8 @@ const translations = {
   BUTTON:"Потыкать проект",
   LIBRARY:"Библиотека",
   LAYOUT:"Верстка",
-  MYSKILLS:"Мои навыки"
+  MYSKILLS:"Мои навыки",
+  CONTACTS:"Контакты"
 };
 
 export default translations;

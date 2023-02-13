@@ -11,6 +11,7 @@ import UncontrolledExample from "../../Components/Carousel/Carousel";
 
 import ProgresBar from "../../Components/ProgresBar/ProgresBar";
 import MySkills from "../../Components/MySkills/MySkills";
+import Contacts from "../../Components/Contacts/Contacts";
 
 const Home = () => {
   useEffect(() => {
@@ -92,6 +93,14 @@ const Home = () => {
           {t(translationKeys.MYSKILLS)}
         </h1>
       <MySkills className="wow animate__fadeInUp myLibrary"/>
+      </Row>
+      <Row>
+      <h1 className="wow animate__fadeInUp myLibrary">
+          {t(translationKeys.CONTACTS)}
+        </h1>
+      </Row>
+      <Row>
+        <Contacts/>
       </Row>
     </Container>
   );
