@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react";
 import { Switch } from "antd";
-
 import { Col, Container, Row } from "react-bootstrap";
 import WOW from "wow.js";
 import { card } from "../../listProjects";
@@ -8,8 +7,6 @@ import { useTranslation } from "react-i18next";
 import LandingCard from "../../Components/LandigCard/LandingCard";
 import translationKeys from "../../translations";
 import UncontrolledExample from "../../Components/Carousel/Carousel";
-
-import ProgresBar from "../../Components/ProgresBar/ProgresBar";
 import MySkills from "../../Components/MySkills/MySkills";
 import Contacts from "../../Components/Contacts/Contacts";
 
