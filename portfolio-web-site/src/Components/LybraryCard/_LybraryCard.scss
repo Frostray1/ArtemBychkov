@@ -1,16 +1,11 @@
 .blockCard {
-  // border:1px solid white;
   border-radius: 25px;
   width: 90%;
   background:red;
   margin:0 auto;
   height: 700px;
-  // margin-top: 10em;
   img {
-    // border-radius: 25px 0px 0px 25px;
     object-fit: scale-down;
-    // width: 40vw;
-    // padding-bottom: 7em;
   }
   p {
     margin-top: 15%;
@@ -41,7 +36,6 @@
 }
 .linkGithub {
   font-size: 35px;
-  // float: right;
 }
 
 @media (max-width: 1200px) {
@@ -59,7 +53,6 @@
 
     img {
       padding-bottom: 0;
-      // width: 100%;
     }
     p {
       text-align: center;
