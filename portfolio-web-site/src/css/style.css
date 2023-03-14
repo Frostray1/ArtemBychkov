@@ -10828,7 +10828,11 @@ body {
 
 .welcomeContent {
   margin-top: 15em;
-  height: 75vh;
+  height: 50vh;
+}
+
+#Library {
+  padding-top: 25vh;
 }
 
 .welcomeText_1 {
@@ -10902,6 +10906,68 @@ body {
   height: 300px;
 }
 
+#Layout {
+  padding-top: 20vh;
+}
+
+#Skills {
+  padding-top: 30vh;
+}
+
+nav {
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+}
+nav ul {
+  font-size: 30px;
+  list-style: none;
+  margin-right: 1em;
+  padding: 0;
+}
+nav ul li {
+  cursor: pointer;
+  margin: 0 0rem;
+  /* добавляем стили для увеличения элемента при наведении */
+  transition: transform 0.2s ease-in-out;
+  /* добавляем стили для активного элемента */
+}
+nav ul li:first-child {
+  margin-left: 0;
+}
+nav ul li:last-child {
+  margin-right: 0;
+}
+nav ul li:hover {
+  transform: scale(1.2);
+  transform-origin: center;
+}
+nav ul li.active {
+  transform: scale(1.4);
+}
+nav ul li.active:hover {
+  transform: scale(1.4);
+}
+
+@media (max-width: 1068px) {
+  nav {
+    top: auto;
+    bottom: 0%;
+    transform: translateY(0);
+    right: 50%;
+    transform: translateX(50%);
+  }
+  nav ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  nav ul li {
+    margin: 1rem;
+  }
+}
 .blockCard {
   border-radius: 25px;
   width: 90%;
@@ -11000,7 +11066,7 @@ body {
 .blockCardLanding {
   border-radius: 25px;
   width: 100%;
-  height: 75vh;
+  height: 50vh;
   margin-top: 5em;
   text-align: center;
   align-items: center;
@@ -11053,7 +11119,7 @@ body {
 }
 .carousel {
   margin-top: 5em;
-  margin-bottom: 50vh;
+  margin-bottom: 30vh;
 }
 
 .CarouselBlockCard {

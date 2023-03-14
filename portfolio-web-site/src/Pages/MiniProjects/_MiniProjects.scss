@@ -1,0 +1,56 @@
+// .block {
+//     height: 100vh;
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     background-color: blue;
+//     color: white;
+  
+//     h1 {
+//       font-size: 3rem;
+//       margin-bottom: 1rem;
+//     }
+  
+//     p {
+//       font-size: 1.5rem;
+//       line-height: 2rem;
+//     }
+//   }
+  
+//   nav {
+//     position: fixed;
+//     top: 50%; /* расположение по вертикали */
+//     right: 0; /* расположение по горизонтали */
+//     transform: translateY(-50%); /* выравнивание по центру */
+    
+//     ul {
+//     //   display: flex;
+//     //   justify-content: space-between;
+//       list-style: none;
+//       margin: 0;
+//       padding: 0;
+      
+//       li {
+//         margin: 0 1rem;
+        
+//         &:first-child {
+//           margin-left: 0;
+//         }
+        
+//         &:last-child {
+//           margin-right: 0;
+//         }
+        
+//         a {
+//           color: #333;
+//           text-decoration: none;
+          
+//           &:hover {
+//             color: #0074d9;
+//           }
+//         }
+//       }
+//     }
+//   }
+  
+ 

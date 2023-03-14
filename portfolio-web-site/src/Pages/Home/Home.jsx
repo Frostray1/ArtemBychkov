@@ -9,8 +9,30 @@ import translationKeys from "../../translations";
 import UncontrolledExample from "../../Components/Carousel/Carousel";
 import MySkills from "../../Components/MySkills/MySkills";
 import Contacts from "../../Components/Contacts/Contacts";
+import { Link } from "react-scroll";
+import { BiHomeSmile } from "react-icons/bi";
+import { IoLibraryOutline } from "react-icons/io5";
+import { AiOutlineLayout } from "react-icons/ai";
+import { GiClassicalKnowledge } from "react-icons/gi";
+import { AiOutlineContacts } from "react-icons/ai";
 
 const Home = () => {
+  // React.useEffect(() => {
+  //   // Запрещаем прокрутку колесом мыши
+  //   const preventScroll = e => e.preventDefault();
+  //   document.addEventListener('wheel', preventScroll, { passive: false });
+
+  //   // Запрещаем прокрутку на сенсорных устройствах
+  //   const preventTouchScroll = e => e.preventDefault();
+  //   document.addEventListener('touchmove', preventTouchScroll, { passive: false });
+
+  //   // Удаляем обработчики событий при размонтировании компонента
+  //   return () => {
+  //     document.removeEventListener('wheel', preventScroll);
+  //     document.removeEventListener('touchmove', preventTouchScroll);
+  //   };
+  // }, []);
+
   useEffect(() => {
     new WOW().init();
   }, []);
@@ -22,11 +44,81 @@ const Home = () => {
 
     // i18n.changeLanguage(language);
   };
- 
+
+  const [activeLink, setActiveLink] = useState(null);
+
+  const handleSetActive = (to) => {
+    console.log(to);
+    setActiveLink(to);
+  };
 
   return (
     <Container>
-      <Row className="mt-3">
+      <nav>
+        <ul>
+          <li className={activeLink === "Welcome" ? "active" : ""}>
+            <Link
+              to="Welcome"
+              smooth={true}
+              spy={true}
+              duration={200}
+              onSetActive={() => handleSetActive("Welcome")}
+              onClick={() => handleSetActive("Welcome")}
+            >
+              <BiHomeSmile />
+            </Link>
+          </li>
+          <li className={activeLink === "Library" ? "active" : ""}>
+            <Link
+              to="Library"
+              smooth={true}
+              spy={true}
+              duration={300}
+              onSetActive={() => handleSetActive("Library")}
+              onClick={() => handleSetActive("Library")}
+            >
+              <IoLibraryOutline />
+            </Link>
+          </li>
+          <li className={activeLink === "Layout" ? "active" : ""}>
+            <Link
+              to="Layout"
+              smooth={true}
+              spy={true}
+              duration={500}
+              onSetActive={() => handleSetActive("Layout")}
+              onClick={() => handleSetActive("Layout")}
+            >
+              <AiOutlineLayout />
+            </Link>
+          </li>
+          <li className={activeLink === "Skills" ? "active" : ""}>
+            <Link
+              to="Skills"
+              smooth={true}
+              spy={true}
+              duration={500}
+              onSetActive={() => handleSetActive("Skills")}
+              onClick={() => handleSetActive("Skills")}
+            >
+              <GiClassicalKnowledge />
+            </Link>
+          </li>
+          <li className={activeLink === "Contacts" ? "active" : ""}>
+            <Link
+              to="Contacts"
+              smooth={true}
+              spy={true}
+              duration={500}
+              onSetActive={() => handleSetActive("Contacts")}
+              onClick={() => handleSetActive("Contacts")}
+            >
+              <AiOutlineContacts />
+            </Link>
+          </li>
+        </ul>
+      </nav>
+      <Row className="mt-3" id="Welcome">
         <Col>
           <div className="links">
             <a
@@ -64,7 +156,7 @@ const Home = () => {
           </div>
         </Col>
       </Row>
-      <Row>
+      <Row id="Library">
         <h1 className="wow animate__fadeInUp myLibrary">
           {t(translationKeys.LIBRARY)}
         </h1>
@@ -72,7 +164,7 @@ const Home = () => {
       <Row className="wow animate__fadeInUp ">
         <UncontrolledExample />
       </Row>
-      <Row>
+      <Row id="Layout">
         <h1 className="wow animate__fadeInUp myLibrary">
           {t(translationKeys.LAYOUT)}
         </h1>
@@ -85,19 +177,19 @@ const Home = () => {
           <LandingCard item={card[5]} />
         </Col>
       </Row>
-      <Row>
-      <h1 className="wow animate__fadeInUp myLibrary">
+      <Row id="Skills">
+        <h1 className="wow animate__fadeInUp myLibrary">
           {t(translationKeys.MYSKILLS)}
         </h1>
-      <MySkills className="wow animate__fadeInUp myLibrary"/>
+        <MySkills className="wow animate__fadeInUp myLibrary" />
       </Row>
       <Row>
-      <h1 className="wow animate__fadeInUp myLibrary">
+        <h1 className="wow animate__fadeInUp myLibrary">
           {t(translationKeys.CONTACTS)}
         </h1>
       </Row>
       <Row>
-        <Contacts/>
+        <Contacts />
       </Row>
     </Container>
   );
