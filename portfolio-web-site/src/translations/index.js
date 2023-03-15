@@ -10,7 +10,9 @@ const translationKeys = {
   LIBRARY:"LIBRARY",
   LAYOUT:"LAYOUT",
   MYSKILLS:"MYSKILLS",
-  CONTACTS:"CONTACTS"
+  CONTACTS:"CONTACTS",
+  MAIN:"MAIN",
+  SKILLS:"SKILLS",
 };
 
 export default translationKeys;

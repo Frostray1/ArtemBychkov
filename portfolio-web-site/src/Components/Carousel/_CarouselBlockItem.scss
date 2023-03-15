@@ -95,7 +95,11 @@
   right: 80%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px),( max-height:601px) {
+  .carousel{
+    margin-top: 3em;
+    margin-bottom: 40vh;
+}
   .CarouselBlock__IconLinkSite {
     display: block;
   }

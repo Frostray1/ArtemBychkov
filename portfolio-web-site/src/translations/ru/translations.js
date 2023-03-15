@@ -11,7 +11,9 @@ const translations = {
   LIBRARY:"Библиотека",
   LAYOUT:"Верстка",
   MYSKILLS:"Мои навыки",
-  CONTACTS:"Контакты"
+  CONTACTS:"Контакты",
+  MAIN:"Главная",
+  SKILLS:"Навыки",
 };
 
 export default translations;

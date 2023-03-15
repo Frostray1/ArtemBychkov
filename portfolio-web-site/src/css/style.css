@@ -10912,6 +10912,11 @@ body {
 
 #Skills {
   padding-top: 30vh;
+  padding-bottom: 15vh;
+}
+
+#Contacts {
+  padding-top: 35vh;
 }
 
 nav {
@@ -10927,11 +10932,23 @@ nav ul {
   padding: 0;
 }
 nav ul li {
+  text-align: center;
   cursor: pointer;
   margin: 0 0rem;
   /* добавляем стили для увеличения элемента при наведении */
   transition: transform 0.2s ease-in-out;
   /* добавляем стили для активного элемента */
+}
+nav ul li a {
+  text-decoration: none;
+  color: white;
+}
+nav ul li a:hover {
+  text-decoration: none;
+  color: white;
+}
+nav ul li p {
+  font-size: 12px;
 }
 nav ul li:first-child {
   margin-left: 0;
@@ -10966,6 +10983,28 @@ nav ul li.active:hover {
   }
   nav ul li {
     margin: 1rem;
+  }
+}
+@media (max-width: 415px), (max-height: 601px) {
+  .blockCardLanding {
+    margin-bottom: 10vh;
+  }
+  #Library {
+    padding-top: 15vh;
+  }
+  #Skills {
+    padding-top: 8vh;
+    padding-bottom: 30vh;
+  }
+  #Contacts {
+    padding-top: 15vh;
+  }
+  .welcomeContent {
+    margin-top: 8em;
+    height: 70vh;
+  }
+  nav ul li {
+    margin: 0.7rem;
   }
 }
 .blockCard {
@@ -11085,14 +11124,24 @@ nav ul li.active:hover {
   margin-top: 2rem;
 }
 
+@media (max-width: 1300px) {
+  .blockCardLanding {
+    margin-top: 0.2rem;
+  }
+  .blockCardLanding img {
+    padding-bottom: 0;
+    width: 100%;
+    height: 50%;
+  }
+}
 @media (max-width: 767px) {
   .blockCardLanding {
     margin-top: 20%;
   }
   .blockCardLanding img {
     padding-bottom: 0;
-    width: 70vw;
-    height: 40vh;
+    width: 20vw;
+    height: 20vh;
   }
   .linkSite {
     margin-left: 20%;
@@ -11103,18 +11152,22 @@ nav ul li.active:hover {
 }
 @media (max-width: 574px) {
   .blockCardLanding {
-    margin-top: 10%;
+    margin-top: 5%;
+    margin-bottom: 15vh;
   }
   .blockCardLanding img {
     padding-bottom: 0;
-    width: 90vw;
-    height: 30vh;
+    width: 80%;
+    height: 40%;
   }
   .linkSite {
     margin-left: 20%;
   }
   .blockCard__info {
-    margin-top: 5%;
+    margin-top: 1%;
+  }
+  .blockCardLanding__Links {
+    margin-top: 2em;
   }
 }
 .carousel {
@@ -11215,7 +11268,11 @@ nav ul li.active:hover {
   right: 80%;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 767px), (max-height: 601px) {
+  .carousel {
+    margin-top: 3em;
+    margin-bottom: 40vh;
+  }
   .CarouselBlock__IconLinkSite {
     display: block;
   }
@@ -11301,7 +11358,6 @@ nav ul li.active:hover {
 .skillsInfo {
   text-align: center;
   margin: 0;
-  margin-bottom: 50vh;
 }
 .skillsInfo h5, .skillsInfo .h5 {
   margin-top: 1em;
@@ -11313,17 +11369,30 @@ nav ul li.active:hover {
   width: 100px;
   height: 100px;
 }
-
 .skillsIcons:hover {
   width: 120px;
   height: 120px;
   transition: 0.2s;
 }
-
 .skillsIcons:not(:hover) {
   width: 100px;
   height: 100px;
   transition: 0.2s;
+}
+@media (max-width: 430px) {
+  .skillsIcons:hover {
+    width: 50px;
+    height: 50px;
+    transition: 0.2s;
+  }
+  .skillsIcons:not(:hover) {
+    width: 60px;
+    height: 50px;
+    transition: 0.2s;
+  }
+  .skillsIcons .skillsInfo h5, .skillsIcons .skillsInfo .h5 {
+    font-size: 8px;
+  }
 }
 
 .Contacts {
@@ -11433,6 +11502,7 @@ nav ul li.active:hover {
 @media (max-width: 430px) {
   .Contacts {
     width: 65vw;
+    margin-top: 1em;
   }
   .button__Email {
     display: none;

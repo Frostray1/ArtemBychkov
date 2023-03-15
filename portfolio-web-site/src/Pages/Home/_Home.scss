@@ -141,77 +141,116 @@ body {
 }
 #Skills {
   padding-top: 30vh;
+  padding-bottom: 15vh;
+}
+#Contacts {
+  padding-top: 35vh;
 }
 
 nav {
-    position: fixed;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-  
-    ul {
-      font-size: 30px;
-      list-style: none;
-      margin-right: 1em;
-      padding: 0;
-  
-      li {
-        cursor: pointer;
-        margin: 0 0rem;
-  
-        &:first-child {
-          margin-left: 0;
-        }
-  
-        &:last-child {
-          margin-right: 0;
-        }
-  
-       
-  
-        /* добавляем стили для увеличения элемента при наведении */
-        transition: transform 0.2s ease-in-out;
-  
+  position: fixed;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+
+  ul {
+    font-size: 30px;
+    list-style: none;
+    margin-right: 1em;
+    padding: 0;
+
+    li {
+      text-align: center;
+      cursor: pointer;
+      margin: 0 0rem;
+      a {
+        text-decoration: none;
+        color: white;
         &:hover {
-          transform: scale(1.2);
-          transform-origin: center;
+          text-decoration: none;
+          color: white;
         }
-  
-        /* добавляем стили для активного элемента */
-        &.active {
-            transform: scale(1.4);
-            // background:red;
-  
-          &:hover {
-            transform: scale(1.4);
-          }
+      }
+      p {
+        font-size: 12px;
+      }
+      &:first-child {
+        margin-left: 0;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+
+      /* добавляем стили для увеличения элемента при наведении */
+      transition: transform 0.2s ease-in-out;
+
+      &:hover {
+        transform: scale(1.2);
+        transform-origin: center;
+      }
+
+      /* добавляем стили для активного элемента */
+      &.active {
+        transform: scale(1.4);
+        // background:red;
+
+        &:hover {
+          transform: scale(1.4);
         }
       }
     }
   }
+}
 
 
 
-@media (max-width: 1068px) {
+@media (max-width: 1068px ) {
   nav {
     top: auto;
     bottom: 0%;
     transform: translateY(0);
     right: 50%;
     transform: translateX(50%);
-  
+
     ul {
-        width: 100%;
-        
+      width: 100%;
+
       display: flex;
       justify-content: center;
 
       align-items: center;
-      li{
+      li {
         margin: 1rem;
       }
     }
-
   }
 }
-
+@media (max-width: 415px),( max-height:601px) {
+  .blockCardLanding{
+    margin-bottom: 10vh;
+  }
+  #Library{
+    padding-top:15vh;
+    
+  }
+  
+  #Skills{
+    padding-top: 8vh;
+    padding-bottom: 30vh;
+  }
+  #Contacts{
+    padding-top:15vh;
+  }
+  .welcomeContent{
+    margin-top: 8em;
+    height: 70vh;
+  }
+  nav {
+    ul {
+      li {
+        margin: 0.7rem;
+      }
+    }
+  }
+}

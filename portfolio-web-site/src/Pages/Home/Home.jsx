@@ -61,64 +61,69 @@ const Home = () => {
               to="Welcome"
               smooth={true}
               spy={true}
-              duration={200}
+              duration={150}
               onSetActive={() => handleSetActive("Welcome")}
               onClick={() => handleSetActive("Welcome")}
             >
               <BiHomeSmile />
             </Link>
+            <p className="navigation-text">{t(translationKeys.MAIN)}</p>
           </li>
           <li className={activeLink === "Library" ? "active" : ""}>
             <Link
               to="Library"
               smooth={true}
               spy={true}
-              duration={300}
+              duration={150}
               onSetActive={() => handleSetActive("Library")}
               onClick={() => handleSetActive("Library")}
             >
               <IoLibraryOutline />
             </Link>
+            <p className="navigation-text">{t(translationKeys.LIBRARY)}</p>
           </li>
           <li className={activeLink === "Layout" ? "active" : ""}>
             <Link
               to="Layout"
               smooth={true}
               spy={true}
-              duration={500}
+              duration={150}
               onSetActive={() => handleSetActive("Layout")}
               onClick={() => handleSetActive("Layout")}
             >
               <AiOutlineLayout />
             </Link>
+            <p className="navigation-text">{t(translationKeys.LAYOUT)}</p>
           </li>
           <li className={activeLink === "Skills" ? "active" : ""}>
             <Link
               to="Skills"
               smooth={true}
               spy={true}
-              duration={500}
+              duration={150}
               onSetActive={() => handleSetActive("Skills")}
               onClick={() => handleSetActive("Skills")}
             >
               <GiClassicalKnowledge />
             </Link>
+            <p className="navigation-text">{t(translationKeys.SKILLS)}</p>
           </li>
           <li className={activeLink === "Contacts" ? "active" : ""}>
             <Link
               to="Contacts"
               smooth={true}
               spy={true}
-              duration={500}
+              duration={150}
               onSetActive={() => handleSetActive("Contacts")}
               onClick={() => handleSetActive("Contacts")}
             >
               <AiOutlineContacts />
             </Link>
+            <p className="navigation-text">{t(translationKeys.CONTACTS)}</p>
           </li>
         </ul>
       </nav>
-      <Row className="mt-3" id="Welcome">
+      <Row className="pt-3" id="Welcome">
         <Col>
           <div className="links">
             <a
@@ -169,7 +174,7 @@ const Home = () => {
           {t(translationKeys.LAYOUT)}
         </h1>
       </Row>
-      <Row>
+      <Row id="landingCardItem">
         <Col className="wow animate__fadeInUp libraryCard">
           <LandingCard item={card[4]} />
         </Col>
@@ -183,7 +188,7 @@ const Home = () => {
         </h1>
         <MySkills className="wow animate__fadeInUp myLibrary" />
       </Row>
-      <Row>
+      <Row id="Contacts">
         <h1 className="wow animate__fadeInUp myLibrary">
           {t(translationKeys.CONTACTS)}
         </h1>

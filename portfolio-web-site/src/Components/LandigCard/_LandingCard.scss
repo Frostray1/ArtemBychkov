@@ -22,7 +22,18 @@ a {
   margin-top: 2rem;
 }
 
+@media (max-width: 1300px) {
+  .blockCardLanding {
+    margin-top: 0.2rem;
+    img {
 
+        padding-bottom: 0;
+        width: 100%;
+        height: 50%;
+    }
+  }
+
+}
 
 
 @media (max-width: 767px) {
@@ -31,8 +42,8 @@ a {
     img {
 
         padding-bottom: 0;
-        width: 70vw;
-        height: 40vh;
+        width: 20vw;
+        height: 20vh;
     }
   }
   .linkSite{
@@ -44,18 +55,22 @@ a {
 }
 @media (max-width: 574px) {
     .blockCardLanding {
-      margin-top: 10%;
+      margin-top: 5%;
+      margin-bottom: 15vh;
       img {
   
           padding-bottom: 0;
-          width: 90vw;
-          height: 30vh;
+          width: 80%;
+          height: 40%;
       }
     }
     .linkSite{
       margin-left: 20%;
     }
     .blockCard__info {
-        margin-top: 5%;
+        margin-top: 1%;
+      }
+      .blockCardLanding__Links{
+        margin-top: 2em;
       }
   }

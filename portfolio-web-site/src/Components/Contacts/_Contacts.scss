@@ -107,11 +107,16 @@
     .Contacts{
         width: 65vw;   
     }
+   
   }
   @media (max-width: 430px) {
     .Contacts{
         width: 65vw;
+        margin-top: 1em;
         
+    }
+    .LinkIcon{
+     
     }
     .button__Email{
         display: none;
@@ -119,6 +124,7 @@
     .CarouselBlock__linkSiteIcon{
         display: block;
     }
+    
   }
   @media (max-width: 660px) {
     .Contacts{

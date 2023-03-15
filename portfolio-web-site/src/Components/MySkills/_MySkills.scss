@@ -1,25 +1,49 @@
-.skillsInfo{
-    text-align: center;
-    margin:0;
-    margin-bottom: 50vh;
-    h5{
-        margin-top: 1em;
-    }
+.skillsInfo {
+  text-align: center;
+  margin: 0;
+
+  h5 {
+    margin-top: 1em;
+  }
 }
 
-.skillsIcons{
-    margin-top: 3em;
-    vertical-align: middle;
+.skillsIcons {
+  margin-top: 3em;
+  vertical-align: middle;
+  width: 100px;
+  height: 100px;
+
+  &:hover {
+    width: 120px;
+    height: 120px;
+    transition: 0.2s;
+  }
+
+  &:not(:hover) {
     width: 100px;
     height: 100px;
-}
-.skillsIcons:hover{
-    width: 120px;
-    height: 120px; 
-    transition: 0.2s
-}
-.skillsIcons:not(:hover) {
-    width: 100px;
-    height: 100px; 
-    transition: 0.2s
+    transition: 0.2s;
+  }
+
+  @media (max-width: 430px) {
+    // width: 50px;
+    // height: 50px;
+
+    &:hover {
+      width: 50px;
+      height: 50px;
+      transition: 0.2s;
+    }
+
+    &:not(:hover) {
+      width: 60px;
+      height: 50px;
+      transition: 0.2s;
+    }
+    .skillsInfo{
+        h5{
+            font-size: 8px;
+        }
+    }
+  }
 }
