@@ -13,6 +13,7 @@ const translations = {
   CONTACTS:"Contacts",
   MAIN:"Main",
   SKILLS:"Skills",
+  MINIPROJECTS: "Mini projects",
 };
 
 export default translations;

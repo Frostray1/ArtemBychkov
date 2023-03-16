@@ -6,6 +6,9 @@ body {
 
 .links {
   font-size: 2em;
+  display: flex;
+  justify-items: center;
+  align-items: center;
   a {
     text-decoration: none;
     color: white;
@@ -55,7 +58,7 @@ body {
   height: 50vh;
 }
 #Library {
-  padding-top: 25vh;
+  padding-top: 20vh;
 }
 .container {
 }
@@ -203,9 +206,7 @@ nav {
   }
 }
 
-
-
-@media (max-width: 1068px ) {
+@media (max-width: 1068px) {
   nav {
     top: auto;
     bottom: 0%;
@@ -226,23 +227,22 @@ nav {
     }
   }
 }
-@media (max-width: 415px),( max-height:601px) {
-  .blockCardLanding{
+@media (max-width: 415px), (max-height: 601px) {
+  .blockCardLanding {
     margin-bottom: 10vh;
   }
-  #Library{
-    padding-top:15vh;
-    
+  #Library {
+    padding-top: 15vh;
   }
-  
-  #Skills{
+
+  #Skills {
     padding-top: 8vh;
     padding-bottom: 30vh;
   }
-  #Contacts{
-    padding-top:15vh;
+  #Contacts {
+    padding-top: 15vh;
   }
-  .welcomeContent{
+  .welcomeContent {
     margin-top: 8em;
     height: 70vh;
   }

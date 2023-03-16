@@ -1,0 +1,46 @@
+.button__miniProjects {
+    margin: 0 auto;
+    width: 240px;
+    height: 60px;
+    background: none;
+    border: 4px solid;
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-size: 16px;
+    position: relative;
+    a{
+        text-decoration: none;
+        color:white;
+    }
+  }
+  
+  .button__miniProjects::before,
+  .button__miniProjects::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 5px;
+    background: rgba(0, 0, 0, 1);
+    transform: skewX(50deg);
+    transition: 0.4s linear;
+  }
+  
+  .button__miniProjects::before {
+    top: -4px;
+    left: 10%;
+  }
+  
+  .button__miniProjects::after {
+    bottom: -4px;
+    right: 10%;
+  }
+  
+  .button__miniProjects:hover::before {
+    left: 80%;
+  }
+  
+  .button__miniProjects:hover::after {
+    right: 80%;
+  }

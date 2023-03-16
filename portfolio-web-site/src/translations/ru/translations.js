@@ -14,6 +14,7 @@ const translations = {
   CONTACTS:"Контакты",
   MAIN:"Главная",
   SKILLS:"Навыки",
+  MINIPROJECTS: "Мини проекты"
 };
 
 export default translations;

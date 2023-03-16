@@ -13,6 +13,7 @@ const translationKeys = {
   CONTACTS:"CONTACTS",
   MAIN:"MAIN",
   SKILLS:"SKILLS",
+  MINIPROJECTS:"MINIPROJECTS",
 };
 
 export default translationKeys;

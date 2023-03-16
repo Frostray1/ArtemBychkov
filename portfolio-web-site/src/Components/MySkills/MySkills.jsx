@@ -2,7 +2,7 @@ import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { AiOutlineHtml5 } from 'react-icons/ai';
 import { IoLogoCss3, IoLogoJavascript, IoLogoSass } from 'react-icons/io';
-import {DiJavascript1, DiReact } from 'react-icons/di';
+
 import {SiAntdesign, SiPostgresql, SiRedux} from 'react-icons/si';
 import {GrReactjs} from 'react-icons/gr';
 import {BsBootstrap} from 'react-icons/bs';

@@ -2,7 +2,7 @@ import Home from "./Pages/Home/Home";
 import './css/style.css'
 import {Routes, Route} from 'react-router-dom'
 import 'animate.css';
-import WOW from 'wow.js'
+// import WOW from 'wow.js'
 import MiniProjects from "./Pages/MiniProjects/MiniProjects";
 
 function App() {

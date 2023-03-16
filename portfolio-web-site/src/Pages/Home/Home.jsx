@@ -16,6 +16,7 @@ import { AiOutlineLayout } from "react-icons/ai";
 import { GiClassicalKnowledge } from "react-icons/gi";
 import { AiOutlineContacts } from "react-icons/ai";
 
+
 const Home = () => {
   // React.useEffect(() => {
   //   // Запрещаем прокрутку колесом мыши
@@ -41,8 +42,6 @@ const Home = () => {
 
   const changeLanguage = (language) => {
     language ? i18n.changeLanguage("en") : i18n.changeLanguage("ru");
-
-    // i18n.changeLanguage(language);
   };
 
   const [activeLink, setActiveLink] = useState(null);
@@ -66,8 +65,9 @@ const Home = () => {
               onClick={() => handleSetActive("Welcome")}
             >
               <BiHomeSmile />
+              <p className="navigation-text">{t(translationKeys.MAIN)}</p>
             </Link>
-            <p className="navigation-text">{t(translationKeys.MAIN)}</p>
+            
           </li>
           <li className={activeLink === "Library" ? "active" : ""}>
             <Link
@@ -79,8 +79,9 @@ const Home = () => {
               onClick={() => handleSetActive("Library")}
             >
               <IoLibraryOutline />
+              <p className="navigation-text">{t(translationKeys.LIBRARY)}</p>
             </Link>
-            <p className="navigation-text">{t(translationKeys.LIBRARY)}</p>
+            
           </li>
           <li className={activeLink === "Layout" ? "active" : ""}>
             <Link
@@ -92,8 +93,9 @@ const Home = () => {
               onClick={() => handleSetActive("Layout")}
             >
               <AiOutlineLayout />
+              <p className="navigation-text">{t(translationKeys.LAYOUT)}</p>
             </Link>
-            <p className="navigation-text">{t(translationKeys.LAYOUT)}</p>
+           
           </li>
           <li className={activeLink === "Skills" ? "active" : ""}>
             <Link
@@ -105,8 +107,9 @@ const Home = () => {
               onClick={() => handleSetActive("Skills")}
             >
               <GiClassicalKnowledge />
+              <p className="navigation-text">{t(translationKeys.SKILLS)}</p>
             </Link>
-            <p className="navigation-text">{t(translationKeys.SKILLS)}</p>
+           
           </li>
           <li className={activeLink === "Contacts" ? "active" : ""}>
             <Link
@@ -118,8 +121,9 @@ const Home = () => {
               onClick={() => handleSetActive("Contacts")}
             >
               <AiOutlineContacts />
+               <p className="navigation-text">{t(translationKeys.CONTACTS)}</p>
             </Link>
-            <p className="navigation-text">{t(translationKeys.CONTACTS)}</p>
+           
           </li>
         </ul>
       </nav>
@@ -168,6 +172,7 @@ const Home = () => {
       </Row>
       <Row className="wow animate__fadeInUp ">
         <UncontrolledExample />
+        
       </Row>
       <Row id="Layout">
         <h1 className="wow animate__fadeInUp myLibrary">
