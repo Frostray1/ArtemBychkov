@@ -1,7 +1,7 @@
-
 import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
+import Calc from "../../Components/Calc-Ios/Calc";
 import ColorGenerate from "../../Components/Color-generate/ColorGenerate";
 import RandomQuote from "../../Components/RandomQuote/RandomQuote";
 
@@ -12,7 +12,7 @@ const MiniProjects = () => {
         <Col>
           <div className="links">
             <Link className="back" to="/">
-              <i class="bi bi-arrow-left-circle"></i>
+              <i className="bi bi-arrow-left-circle"></i>
             </Link>
             <a
               target="_blank"
@@ -46,7 +46,8 @@ const MiniProjects = () => {
         </Col>
         <Col>
           <p className="description">
-            "Color Generator" - это веб-приложение для генерации случайного
+            <br></br>
+            "Color Generator" - это компонент для генерации случайного
             цвета в формате HEX и его отображения на экране. Приложение
             использует React и состоит из одного компонента "ColorGenerate".
             Пользователь может нажать на кнопку "generate color" для генерации
@@ -62,7 +63,7 @@ const MiniProjects = () => {
       <Row className="colorGenerate">
         <Col>
           <p className="description">
-            Приложение "RandomQuote" на React генерирует случайные цитаты из
+            Компонент "RandomQuote" на React генерирует случайные цитаты из
             открытого API. Оно использует два API: один для получения цитат на
             английском языке, а другой для перевода этих цитат на русский язык
             (если пользователь включил перевод). Пользователь может
@@ -76,11 +77,16 @@ const MiniProjects = () => {
       </Row>
       <Row className="colorGenerate">
         <Col>
+          <Calc />
         </Col>
         <Col>
+          <p className="description">
+            Данный компонент является простым калькулятором, который позволяет
+            выполнять математические операции (сложение, вычитание, умножение,
+            деление) с числами и выводить результат на экран. {" "}
+          </p>
         </Col>
       </Row>
-
     </Container>
   );
 };

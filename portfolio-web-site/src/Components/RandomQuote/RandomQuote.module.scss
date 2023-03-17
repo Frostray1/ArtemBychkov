@@ -3,8 +3,9 @@
   margin-right: auto;
 text-align: justify;
   
-  width: 500px;
-  height: 190px;
+  max-width: 500px;
+  min-width: 300px;
+  min-height: 190px;
   padding: 1em;
   border: 1px solid white;
   border-radius: 25px;
