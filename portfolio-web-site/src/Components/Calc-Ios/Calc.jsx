@@ -7,6 +7,7 @@ const Calc = () => {
   const [hasDecimal, setHasDecimal] = useState(false);
 
   const handleNumberClick = (num) => {
+    
     setValue(value === "0" ? String(num) : value + num);
   };
 
@@ -25,7 +26,8 @@ const Calc = () => {
     } else {
       setPrevValue(Number(value));
     }
-    setValue("0");
+    
+    setValue(" ");
     setOperator(nextOperator);
     setHasDecimal(false);
   };

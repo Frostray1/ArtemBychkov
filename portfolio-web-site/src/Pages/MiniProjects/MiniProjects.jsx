@@ -3,11 +3,14 @@ import { Col, Container, Row } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import Calc from "../../Components/Calc-Ios/Calc";
 import ColorGenerate from "../../Components/Color-generate/ColorGenerate";
+import ParticlesBackground from "../../Components/ParticlesBackground/ParticlesBackground";
+
 import RandomQuote from "../../Components/RandomQuote/RandomQuote";
 
 const MiniProjects = () => {
   return (
     <Container>
+    <ParticlesBackground/>
       <Row className="pt-3" id="Welcome">
         <Col>
           <div className="links">

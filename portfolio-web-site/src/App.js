@@ -7,10 +7,14 @@ import MiniProjects from "./Pages/MiniProjects/MiniProjects";
 
 function App() {
   return (
+    <>
+    
     <Routes>
       <Route path='/' element={<Home/>}/>
       <Route path='/mini-projects' element={<MiniProjects/>}/>
     </Routes>
+    </>
+    
   );
 }
 

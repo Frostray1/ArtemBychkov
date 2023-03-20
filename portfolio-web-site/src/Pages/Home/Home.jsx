@@ -15,7 +15,7 @@ import { IoLibraryOutline } from "react-icons/io5";
 import { AiOutlineLayout } from "react-icons/ai";
 import { GiClassicalKnowledge } from "react-icons/gi";
 import { AiOutlineContacts } from "react-icons/ai";
-
+import ParticlesBackground from "../../Components/ParticlesBackground/ParticlesBackground";
 
 const Home = () => {
   // React.useEffect(() => {
@@ -52,7 +52,10 @@ const Home = () => {
   };
 
   return (
+    <>
+   
     <Container>
+    <ParticlesBackground/>
       <nav>
         <ul>
           <li className={activeLink === "Welcome" ? "active" : ""}>
@@ -202,7 +205,10 @@ const Home = () => {
         <Contacts />
       </Row>
     </Container>
+    </>
   );
+
 };
+
 
 export default Home;
