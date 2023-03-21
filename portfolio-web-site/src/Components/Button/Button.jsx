@@ -7,7 +7,7 @@ const Button = ({ name }) => {
   };
     
   return (
-    <div className="pb-5 text-center">
+    <div className="button_link text-center">
       <Link to="/mini-projects">
         <button  onClick={handleClick} className="button__miniProjects">{name}</button>
       </Link>

@@ -17,6 +17,8 @@ import { GiClassicalKnowledge } from "react-icons/gi";
 import { AiOutlineContacts } from "react-icons/ai";
 import ParticlesBackground from "../../Components/ParticlesBackground/ParticlesBackground";
 
+
+
 const Home = () => {
   // React.useEffect(() => {
   //   // Запрещаем прокрутку колесом мыши
@@ -172,9 +174,10 @@ const Home = () => {
         <h1 className="wow animate__fadeInUp myLibrary">
           {t(translationKeys.LIBRARY)}
         </h1>
+        <UncontrolledExample />
       </Row>
       <Row className="wow animate__fadeInUp ">
-        <UncontrolledExample />
+       
         
       </Row>
       <Row id="Layout">

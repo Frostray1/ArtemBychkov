@@ -55,10 +55,11 @@ body {
 
 .welcomeContent {
   margin-top: 15em;
-  height: 50vh;
+  height: 60vh;
 }
 #Library {
-  padding-top: 20vh;
+  padding-top: 10vh;
+  margin-bottom: 20vh;
 }
 .container {
 }
@@ -69,7 +70,7 @@ body {
   font-weight: 700;
   letter-spacing: 5px;
   margin-bottom: 20px;
-  background: #000;
+  // background: #000;
   position: relative;
   animation: text 3s 1;
 }
@@ -81,13 +82,15 @@ body {
 
 .welcomeText_2 {
   color: white;
-  background: #000;
+  // background: #000;
   font-size: 30px;
   margin-top: 1em;
+  animation: testq 3s 1;
 }
 .welcomeText_3 {
-  background: #000;
+  // background: #000;
   margin-top: 0.5em;
+  
   animation: testq 3s 1;
 }
 
@@ -95,12 +98,16 @@ body {
   0% {
     color: #000;
     margin-bottom: -65px;
+    // background-color: rgb(0, 0, 0);
   }
   30% {
     margin-bottom: -65px;
+    // background-color: rgba(0, 0, 0, 1);
   }
   85% {
+    
     margin-bottom: -65px;
+    // background-color: rgba(0, 0, 0, 1);
   }
 }
 
@@ -108,11 +115,18 @@ body {
   0% {
     color: #000;
     margin-top: -80px;
+    
   }
   30% {
+    color: #000;
     margin-top: -80px;
   }
   85% {
+    color: #000;
+    margin-top: -80px;
+  }
+  95% {
+    color: #000;
     margin-top: -80px;
   }
 }

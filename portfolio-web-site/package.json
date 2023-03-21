@@ -22,6 +22,7 @@
     "react-i18next": "^12.1.5",
     "react-icons": "^4.7.1",
     "react-native": "^0.71.4",
+    "react-particles": "^2.9.3",
     "react-progress-bar": "^0.1.0",
     "react-router-dom": "^6.8.0",
     "react-scripts": "5.0.1",

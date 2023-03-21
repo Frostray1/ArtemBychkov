@@ -8,10 +8,14 @@ import ParticlesBackground from "../../Components/ParticlesBackground/ParticlesB
 import RandomQuote from "../../Components/RandomQuote/RandomQuote";
 
 const MiniProjects = () => {
+  const styled = { // Временно
+    position:'fixed',
+    
+  }
   return (
     <Container>
     <ParticlesBackground/>
-      <Row className="pt-3" id="Welcome">
+      <Row className="pt-3" id="Welcome" style={styled}>
         <Col>
           <div className="links">
             <Link className="back" to="/">
@@ -36,12 +40,12 @@ const MiniProjects = () => {
             </a>
           </div>
         </Col>
-        <Col>
+        {/* <Col> */}
           {/* <div className="langAndThemes">
             <h5>Eng</h5>
             <Switch className="switch" onChange={changeLanguage} />
           </div> */}
-        </Col>
+        {/* </Col> */}
       </Row>
       <Row className="colorGenerate">
         <Col>

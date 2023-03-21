@@ -23,7 +23,7 @@ function UncontrolledExample() {
           <CarouselBlockItem item={card[3]} />
         </Carousel.Item>
       </Carousel>
-      <Button name={t(translationKeys.MINIPROJECTS)} />
+      <Button  name={t(translationKeys.MINIPROJECTS)} />
     </>
   );
 }
