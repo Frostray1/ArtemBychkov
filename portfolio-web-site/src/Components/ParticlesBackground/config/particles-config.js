@@ -1,4 +1,5 @@
   const particlesConfig ={
+
     "particles": {
       "number": {
         "value": 80,
@@ -67,8 +68,12 @@
         }
       }
     },
+    "fullScreen": {
+      "enable": true,
+      "zIndex": -1
+    },
     "interactivity": {
-      "detect_on": "canvas",
+      "detect_on": "window",
       "events": {
         "onhover": {
           "enable": false,

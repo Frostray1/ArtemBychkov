@@ -9,6 +9,7 @@ import particlesConfig from "./config/particles-config";
 
 
 const ParticlesBackground = () => {
+  
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
     // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
