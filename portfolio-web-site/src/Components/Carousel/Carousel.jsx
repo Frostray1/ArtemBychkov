@@ -22,6 +22,9 @@ function UncontrolledExample() {
         <Carousel.Item>
           <CarouselBlockItem item={card[3]} />
         </Carousel.Item>
+        <Carousel.Item>
+          <CarouselBlockItem item={card[6]} />
+        </Carousel.Item>
       </Carousel>
       <Button  name={t(translationKeys.MINIPROJECTS)} />
     </>

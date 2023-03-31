@@ -47,6 +47,14 @@ export const card = [
     info: translationKeys.FOURTH_CARD_INFO,
 
   },
+  {
+    title: "React Realtime chat",
+    imgLink: require("./img/reactChat.png"),
+    siteLink: "https://react-online-chat.vercel.app/",
+    githubLink: "https://github.com/Frostray1/ReactOnlineChat/tree/main/reactonlinechat",
+    info: translationKeys.FOURTH_CARD_INFO,
+
+  },
 
 
 
